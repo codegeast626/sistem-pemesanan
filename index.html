@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Pemesanan</title>
+</head>
+<body>
+    <h2>Daftar Pemesanan</h2>
+
+    <a href="/tambah">Tambah Data</a>
+
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Nama</th>
+            <th>Pesanan</th>
+        </tr>
+
+        {% for item in data %}
+        <tr>
+            <td>{{ item['id'] }}</td>
+            <td>{{ item['nama'] }}</td>
+            <td>{{ item['pesanan'] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
